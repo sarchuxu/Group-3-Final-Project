@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AE48F1A2C41C8DB00185023 /* Third_TryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE48F192C41C8DB00185023 /* Third_TryApp.swift */; };
+		6A3B8FFC2C47096200C4A31F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8FFB2C47096200C4A31F /* Home.swift */; };
+		6A3B8FFE2C470A8800C4A31F /* Cookie Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8FFD2C470A8800C4A31F /* Cookie Ingredients.swift */; };
+		6A3B90002C470AAD00C4A31F /* Cookie Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8FFF2C470AAD00C4A31F /* Cookie Recipe.swift */; };
+		6A3B90022C470AC800C4A31F /* Brownie Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B90012C470AC800C4A31F /* Brownie Ingredients.swift */; };
+		6A3B90042C470AE900C4A31F /* Brownie Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B90032C470AE800C4A31F /* Brownie Recipe.swift */; };
+		6A3B90062C470FBF00C4A31F /* Pasta Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B90052C470FBF00C4A31F /* Pasta Ingredients.swift */; };
+		6A3B90082C470FCA00C4A31F /* Pasta Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B90072C470FCA00C4A31F /* Pasta Recipe.swift */; };
+		6A3B900A2C47124500C4A31F /* Pizza Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B90092C47124500C4A31F /* Pizza Ingredients.swift */; };
+		6A3B900C2C47125100C4A31F /* Pizza Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B900B2C47125100C4A31F /* Pizza Recipe.swift */; };
+		6AE48F1A2C41C8DB00185023 /* Group_3_Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE48F192C41C8DB00185023 /* Group_3_Final_ProjectApp.swift */; };
 		6AE48F1C2C41C8DB00185023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE48F1B2C41C8DB00185023 /* ContentView.swift */; };
 		6AE48F1E2C41C8DD00185023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE48F1D2C41C8DD00185023 /* Assets.xcassets */; };
 		6AE48F212C41C8DD00185023 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE48F202C41C8DD00185023 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6AE48F162C41C8DB00185023 /* Third Try.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Third Try.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AE48F192C41C8DB00185023 /* Third_TryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Third_TryApp.swift; sourceTree = "<group>"; };
+		6A3B8FFB2C47096200C4A31F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		6A3B8FFD2C470A8800C4A31F /* Cookie Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cookie Ingredients.swift"; sourceTree = "<group>"; };
+		6A3B8FFF2C470AAD00C4A31F /* Cookie Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cookie Recipe.swift"; sourceTree = "<group>"; };
+		6A3B90012C470AC800C4A31F /* Brownie Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brownie Ingredients.swift"; sourceTree = "<group>"; };
+		6A3B90032C470AE800C4A31F /* Brownie Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brownie Recipe.swift"; sourceTree = "<group>"; };
+		6A3B90052C470FBF00C4A31F /* Pasta Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pasta Ingredients.swift"; sourceTree = "<group>"; };
+		6A3B90072C470FCA00C4A31F /* Pasta Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pasta Recipe.swift"; sourceTree = "<group>"; };
+		6A3B90092C47124500C4A31F /* Pizza Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pizza Ingredients.swift"; sourceTree = "<group>"; };
+		6A3B900B2C47125100C4A31F /* Pizza Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pizza Recipe.swift"; sourceTree = "<group>"; };
+		6AE48F162C41C8DB00185023 /* Group 3 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group 3 Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE48F192C41C8DB00185023 /* Group_3_Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group_3_Final_ProjectApp.swift; sourceTree = "<group>"; };
 		6AE48F1B2C41C8DB00185023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AE48F1D2C41C8DD00185023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AE48F202C41C8DD00185023 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +53,7 @@
 		6AE48F0D2C41C8DB00185023 = {
 			isa = PBXGroup;
 			children = (
-				6AE48F182C41C8DB00185023 /* Third Try */,
+				6AE48F182C41C8DB00185023 /* Group 3 Final Project */,
 				6AE48F172C41C8DB00185023 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +61,29 @@
 		6AE48F172C41C8DB00185023 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AE48F162C41C8DB00185023 /* Third Try.app */,
+				6AE48F162C41C8DB00185023 /* Group 3 Final Project.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6AE48F182C41C8DB00185023 /* Third Try */ = {
+		6AE48F182C41C8DB00185023 /* Group 3 Final Project */ = {
 			isa = PBXGroup;
 			children = (
-				6AE48F192C41C8DB00185023 /* Third_TryApp.swift */,
+				6AE48F192C41C8DB00185023 /* Group_3_Final_ProjectApp.swift */,
 				6AE48F1B2C41C8DB00185023 /* ContentView.swift */,
+				6A3B8FFB2C47096200C4A31F /* Home.swift */,
+				6A3B8FFD2C470A8800C4A31F /* Cookie Ingredients.swift */,
+				6A3B8FFF2C470AAD00C4A31F /* Cookie Recipe.swift */,
+				6A3B90012C470AC800C4A31F /* Brownie Ingredients.swift */,
+				6A3B90032C470AE800C4A31F /* Brownie Recipe.swift */,
+				6A3B90052C470FBF00C4A31F /* Pasta Ingredients.swift */,
+				6A3B90072C470FCA00C4A31F /* Pasta Recipe.swift */,
+				6A3B90092C47124500C4A31F /* Pizza Ingredients.swift */,
+				6A3B900B2C47125100C4A31F /* Pizza Recipe.swift */,
 				6AE48F1D2C41C8DD00185023 /* Assets.xcassets */,
 				6AE48F1F2C41C8DD00185023 /* Preview Content */,
 			);
-			path = "Third Try";
+			path = "Group 3 Final Project";
 			sourceTree = "<group>";
 		};
 		6AE48F1F2C41C8DD00185023 /* Preview Content */ = {
@@ -70,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AE48F152C41C8DB00185023 /* Third Try */ = {
+		6AE48F152C41C8DB00185023 /* Group 3 Final Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AE48F242C41C8DD00185023 /* Build configuration list for PBXNativeTarget "Third Try" */;
+			buildConfigurationList = 6AE48F242C41C8DD00185023 /* Build configuration list for PBXNativeTarget "Group 3 Final Project" */;
 			buildPhases = (
 				6AE48F122C41C8DB00185023 /* Sources */,
 				6AE48F132C41C8DB00185023 /* Frameworks */,
@@ -82,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = "Third Try";
+			name = "Group 3 Final Project";
 			productName = "Third Try";
-			productReference = 6AE48F162C41C8DB00185023 /* Third Try.app */;
+			productReference = 6AE48F162C41C8DB00185023 /* Group 3 Final Project.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6AE48F112C41C8DB00185023 /* Build configuration list for PBXProject "Third Try" */;
+			buildConfigurationList = 6AE48F112C41C8DB00185023 /* Build configuration list for PBXProject "Group 3 Final Project" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AE48F152C41C8DB00185023 /* Third Try */,
+				6AE48F152C41C8DB00185023 /* Group 3 Final Project */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3B90082C470FCA00C4A31F /* Pasta Recipe.swift in Sources */,
 				6AE48F1C2C41C8DB00185023 /* ContentView.swift in Sources */,
-				6AE48F1A2C41C8DB00185023 /* Third_TryApp.swift in Sources */,
+				6A3B900C2C47125100C4A31F /* Pizza Recipe.swift in Sources */,
+				6A3B900A2C47124500C4A31F /* Pizza Ingredients.swift in Sources */,
+				6A3B90042C470AE900C4A31F /* Brownie Recipe.swift in Sources */,
+				6A3B8FFE2C470A8800C4A31F /* Cookie Ingredients.swift in Sources */,
+				6A3B90022C470AC800C4A31F /* Brownie Ingredients.swift in Sources */,
+				6A3B8FFC2C47096200C4A31F /* Home.swift in Sources */,
+				6AE48F1A2C41C8DB00185023 /* Group_3_Final_ProjectApp.swift in Sources */,
+				6A3B90002C470AAD00C4A31F /* Cookie Recipe.swift in Sources */,
+				6A3B90062C470FBF00C4A31F /* Pasta Ingredients.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Third Try/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Group 3 Final Project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -284,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kwk.Third-Try";
+				PRODUCT_BUNDLE_IDENTIFIER = "kwk.Group-3-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Third Try/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Group 3 Final Project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -312,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kwk.Third-Try";
+				PRODUCT_BUNDLE_IDENTIFIER = "kwk.Group-3-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6AE48F112C41C8DB00185023 /* Build configuration list for PBXProject "Third Try" */ = {
+		6AE48F112C41C8DB00185023 /* Build configuration list for PBXProject "Group 3 Final Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AE48F222C41C8DD00185023 /* Debug */,
@@ -332,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AE48F242C41C8DD00185023 /* Build configuration list for PBXNativeTarget "Third Try" */ = {
+		6AE48F242C41C8DD00185023 /* Build configuration list for PBXNativeTarget "Group 3 Final Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AE48F252C41C8DD00185023 /* Debug */,
