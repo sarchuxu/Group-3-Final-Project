@@ -11,20 +11,17 @@ struct Pasta_Ingredients: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading){
-                Text("Cookie Ingredients (Pasta unfinished)")
+                Text("Pasta Ingredients")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                Text("2 ¼ cups all-purpose flour (270g)")
-                Text("¾ teaspoon baking soda")
-                Text("¾ teaspoon salt")
-                Text("1 cup unsalted butter softened (227g)")
-                Text("¾ cup light brown sugar (165g)")
-                Text("¾ cup granulated sugar (150g)")
-                Text("1 large egg")
-                Text("1 tablespoon vanilla extract")
-                Text("1½ cups chocolate chips or chunks or chopped bars (270g)")
-                Text("Flaked salt optional")
+                Text("1/2 Cup Butter")
+                Text("1 1/2 Cups Heavy Whipping Cream")
+                Text("2 Teaspoons Garlic Minced")
+                Text("1/2 Teaspoon Italian Seasoning")
+                Text("1/2 Teaspoon Salt")
+                Text("1/4 Teaspoon Pepper")
+                Text("2 Cups Freshly Grated Parmesan Cheese")
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Spacer()

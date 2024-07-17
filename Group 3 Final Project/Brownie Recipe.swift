@@ -10,30 +10,26 @@ import SwiftUI
 struct Brownie_Recipe: View {
     var body: some View {
         ScrollView {
-            Text("1. Heat oven to 350°F.")
-            Spacer()
-                .frame(height: 30.0)
-            Text("2. Grease the bottom and sides of 9-inch square pan. It's important to ahve the exact pan for even baking.")
-            Spacer()
-                .frame(height: 30.0)
-            Text("3. Add egg and vanilla. Beat until well combined, scraping down the sides of the bowl.")
-            Spacer()
-                .frame(height: 30.0)
-            Text("4. With the mixer on low, gradually add the flour mixture. Beat just until combined. Stir in the chocolate chips.")
-            Spacer()
-                .frame(height: 30.0)
-            Text("5. If needed, pause the mixer and add flour in ¼ - ⅓ cups at a time.")
-            Spacer()
-                .frame(height: 30.0)
-            Text("6. Using a 1½ tablespoon scoop, scoop the dough into balls (35g-40g) and place on a small sheet pan or tray lined with wax or parchment paper. Freeze dough balls for 30 minutes, or cover and refrigerate for 12 to 36 hours. (The longer chill will result in a deeper-flavored, chewier cookie, but both are delicious!)")
-            Spacer()
-                .frame(height: 30.0)
-            Text("7. When ready to bake, preheat the oven to 375F. Line two baking sheets with parchment paper or a silicone mat.")
-            Spacer()
-                .frame(height: 30.0)
-            Text("8. Press on any extra chocolate chips and then bake for 10 to 12 minutes or until the edges are golden brown. (For best results, bake one sheet at a time.) Immediately sprinkle cookies with flaked salt, if desired. Let cookies cool on the pan for 5 to 10 minutes. Finish cooling on a wire rack. Store any leftovers in an airtight container for up to 5 days")
+            VStack(alignment: .leading) {
+                Text("1. Heat oven to 350°F.")
+                Spacer()
+                    .frame(height: 30.0)
+                Text("2. Grease the bottom and sides of 9-inch square pan. It's important to ahve the exact pan for even baking.")
+                Spacer()
+                    .frame(height: 30.0)
+                Text("3. Melt butter and chocolate in a double broiler. Double broiler: Boil water in a pot. Place a glass or metal bowl on top (of pot) and add ingredients into glass/metal bowl. Mix and melt until smooth.")
+                Spacer()
+                    .frame(height: 30.0)
+                Text("4. In medium bowl, beat sugar, vanilla and eggs with electric mixer on high speed (speed: 6-10) 5 minutes. Beat in chocolate mixture on low speed (speed: 1-4). Beat in flour just until compine. Optional: Stir in walnuts.")
+                Spacer()
+                    .frame(height: 30.0)
+                Text("5. Spread in pan.")
+                Spacer()
+                    .frame(height: 30.0)
+                Text("6. Bake 40 to 45 minutes or just until brownies begin to pull away from sides of pan. Cool completely in pan or cooling rack. For brownies, cut into 4 rows by 4 rows.")
+            }
         }
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 

@@ -8,7 +8,28 @@
 import SwiftUI
 
 struct Backup_Code: View {
+    @State private var showAlert = false
+    @State private var grams: String = ""
+    @State private var cups: String = ""
+    
     var body: some View {
+        VStack {
+            TextField("Enter grams", text: $grams)
+                .keyboardType(.numberPad)
+                .multilineTextAlignment(.center)
+            Button("Convert"){
+                if let gramsValue = Double(grams) {
+                    let cupsValue = gramsValue / 236.6
+                    cups = String(format: "%.2f", cupsValue)
+                    showAlert = true
+                }
+            }
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Conversion Result"), message:
+                    Text("The number of grams you entered is equal to \(cups) cups."), dismissButton:
+                    .default(Text("OK")))
+        }
         //             var foodPuns = ["pun1", "pun2"]
         //                func pickPun() -> String {
         //                    let random = Int.random(in: 0..<foodPun.count - 1)

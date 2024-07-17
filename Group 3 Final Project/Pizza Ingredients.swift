@@ -11,20 +11,16 @@ struct Pizza_Ingredients: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading){
-                Text("Cookie Ingredients (pizza where)")
+                Text("Pizza Recipe")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                Text("2 ¼ cups all-purpose flour (270g)")
-                Text("¾ teaspoon baking soda")
-                Text("¾ teaspoon salt")
-                Text("1 cup unsalted butter softened (227g)")
-                Text("¾ cup light brown sugar (165g)")
-                Text("¾ cup granulated sugar (150g)")
-                Text("1 large egg")
-                Text("1 tablespoon vanilla extract")
-                Text("1½ cups chocolate chips or chunks or chopped bars (270g)")
-                Text("Flaked salt optional")
+                Text("1 cup warm water")
+                Text("1 (.25 ounce) package active dry yeast")
+                Text("1 teaspoon white sugar")
+                Text("2 ½ cups bread flour")
+                Text("2 tablespoons olive oil")
+                Text("1 teaspoon salt")
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Spacer()
