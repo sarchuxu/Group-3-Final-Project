@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A2AF89B2C4835CD00A5E453 /* Backup Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2AF89A2C4835CC00A5E453 /* Backup Code.swift */; };
 		6A3B8FFC2C47096200C4A31F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8FFB2C47096200C4A31F /* Home.swift */; };
 		6A3B8FFE2C470A8800C4A31F /* Cookie Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8FFD2C470A8800C4A31F /* Cookie Ingredients.swift */; };
 		6A3B90002C470AAD00C4A31F /* Cookie Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8FFF2C470AAD00C4A31F /* Cookie Recipe.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A2AF89A2C4835CC00A5E453 /* Backup Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Backup Code.swift"; sourceTree = "<group>"; };
 		6A3B8FFB2C47096200C4A31F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		6A3B8FFD2C470A8800C4A31F /* Cookie Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cookie Ingredients.swift"; sourceTree = "<group>"; };
 		6A3B8FFF2C470AAD00C4A31F /* Cookie Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cookie Recipe.swift"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				6A3B90072C470FCA00C4A31F /* Pasta Recipe.swift */,
 				6A3B90092C47124500C4A31F /* Pizza Ingredients.swift */,
 				6A3B900B2C47125100C4A31F /* Pizza Recipe.swift */,
+				6A2AF89A2C4835CC00A5E453 /* Backup Code.swift */,
 				6AE48F1D2C41C8DD00185023 /* Assets.xcassets */,
 				6AE48F1F2C41C8DD00185023 /* Preview Content */,
 			);
@@ -173,6 +176,7 @@
 				6A3B90022C470AC800C4A31F /* Brownie Ingredients.swift in Sources */,
 				6A3B8FFC2C47096200C4A31F /* Home.swift in Sources */,
 				6AE48F1A2C41C8DB00185023 /* Group_3_Final_ProjectApp.swift in Sources */,
+				6A2AF89B2C4835CD00A5E453 /* Backup Code.swift in Sources */,
 				6A3B90002C470AAD00C4A31F /* Cookie Recipe.swift in Sources */,
 				6A3B90062C470FBF00C4A31F /* Pasta Ingredients.swift in Sources */,
 			);

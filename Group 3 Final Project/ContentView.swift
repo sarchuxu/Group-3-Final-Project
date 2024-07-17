@@ -8,22 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var HomeScreen = false
     var body: some View {
         NavigationStack {
             VStack {
+                Image("Kooking Woman")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .scaledToFit()
+                    .frame(width:300, height: 300)
                 Text("Kooking with Klossy")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .font(.system(size:42, weight: .bold, design: .rounded))
                     .multilineTextAlignment(.center)
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                Text("FOOD PUNS")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.gray)
                 Spacer()
-                    .frame(height: 60.0)
-                NavigationLink(destination: Home()) {
-                    Text("Enter!")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.black)
-                        .frame(width: 80.0, height: 30.0)
-                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    .frame(height: 70.0)
+                Button() {
+                    HomeScreen = true
+                } 
+                label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 50)
+                        Text("Enter!")
+                            .font(.title3)
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                    .frame(width: 200, height: 70)
+                    .foregroundColor(.pink)
+                }
+                .navigationDestination(isPresented:$HomeScreen) {
+                    Home()
                 }
             }
         }
