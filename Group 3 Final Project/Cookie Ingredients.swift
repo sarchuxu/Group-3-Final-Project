@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Cookie_Ingredients: View {
+        @State private var grams = ""
+        @State private var cups = 0
+        @State private var res = ""
     let lightPink = Color(UIColor(red: 255/255, green: 208/255, blue: 208/255, alpha: 1.0))
     var body: some View {
         ZStack {
@@ -19,6 +22,26 @@ struct Cookie_Ingredients: View {
                         .fontWeight(.bold)
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     Text("2 ¼ cups all-purpose flour (270g)")
+                    VStack {
+                        TextField("input grams", text: $grams)
+                           .multilineTextAlignment(.center)
+                           .font(.title)
+                           .border(Color.gray, width: 1)
+
+                        Button(action: {
+                            if let gramsInt = Int(grams) {
+                                cups = gramsInt * 5
+                                res = "\(grams) grams = \(cups) cups"
+                            } else {
+                                res = "Invalid input"
+                            }
+                        }) {
+                            Text("Convert")
+                        }
+
+                        Text(res)
+                    }
+                }
                     Text("¾ teaspoon baking soda")
                     Text("¾ teaspoon salt")
                     Text("1 cup unsalted butter softened (227g)")
@@ -44,7 +67,7 @@ struct Cookie_Ingredients: View {
             }
         }
     }
-}
+
 
 #Preview {
     Cookie_Ingredients()

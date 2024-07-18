@@ -45,33 +45,62 @@ struct Backup_Code: View {
         //            var randomPun = pickPun()
         //               Text(randomPun)
         Text("This is backup code.")
-//        struct PunderfulView: ViewBuilder {
-//         let pun = "I'm a 'view'-tual comedian!"
-//        var body: some View {
-//        VStack {
-//        Text(pun)
-//         .font(.title)
-//         .bold()
-//         .padding()
-//        Button("Pun-ish me again!") {
-//         print("Okay, okay... here's another one:")
-//         print("Why did the SwiftUI view go to therapy? Because it was feeling a little 'bound'!")
-//         }
-//         }
-//         }
-//        }
-//        struct PunderfulView_Previews: PreviewProvider {
-//        static var previews: some View {
-//        PunderfulView()
-//         }
-//        }
-/*extension     Color {
-    public static let myColor: Color = Color(UIColor(red: 100/255, green: 100/255, blue: 100/255, alpha: 1.0))
- }
- .foregroundColor(.myColor)*/
+        //        struct PunderfulView: ViewBuilder {
+        //         let pun = "I'm a 'view'-tual comedian!"
+        //        var body: some View {
+        //        VStack {
+        //        Text(pun)
+        //         .font(.title)
+        //         .bold()
+        //         .padding()
+        //        Button("Pun-ish me again!") {
+        //         print("Okay, okay... here's another one:")
+        //         print("Why did the SwiftUI view go to therapy? Because it was feeling a little 'bound'!")
+        //         }
+        //         }
+        //         }
+        //        }
+        //        struct PunderfulView_Previews: PreviewProvider {
+        //        static var previews: some View {
+        //        PunderfulView()
+        //         }
+        //        }
+        /*extension     Color {
+         public static let myColor: Color = Color(UIColor(red: 100/255, green: 100/255, blue: 100/255, alpha: 1.0))
+         }
+         .foregroundColor(.myColor)*/
+        //}
+        //}
+        
+        //#Preview {
+        //}
+        
+        //        struct ContentView: View {
+        //            @State private var grams = ""
+        //            @State private var cups = 0
+        //            @State private var res = ""
+        //
+        //            var body: some View {
+        //                VStack {
+        //                    TextField("input grams", text: $grams)
+        //                       .multilineTextAlignment(.center)
+        //                       .font(.title)
+        //                       .border(Color.gray, width: 1)
+        //
+        //                    Button(action: {
+        //                        if let gramsInt = Int(grams) {
+        //                            cups = gramsInt * 5
+        //                            res = "\(grams) grams = \(cups) cups"
+        //                        } else {
+        //                            res = "Invalid input"
+        //                        }
+        //                    }) {
+        //                        Text("Convert")
+        //                    }
+        //
+        //                    Text(res)
+        //                }
+        //            }
+        //        }
     }
-}
-
-#Preview {
-    Backup_Code()
 }
