@@ -8,67 +8,75 @@
 import SwiftUI
 
 struct Cookie_Ingredients: View {
-        @State private var grams = ""
-        @State private var cups = 0
-        @State private var res = ""
-    let lightPink = Color(UIColor(red: 255/255, green: 208/255, blue: 208/255, alpha: 1.0))
+    let lightBlue = Color(UIColor(red: 205/255, green: 245/255, blue: 253/255, alpha: 1.0))
+    let darkBlue = Color(UIColor(red: 137/255, green: 207/255, blue: 243/244, alpha: 1.0))
     var body: some View {
         ZStack {
-            Color(lightPink).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Color(lightBlue).edgesIgnoringSafeArea(.all)
             ScrollView {
-                VStack(alignment: .leading){
+                VStack(alignment: .center) {
                     Text("Cookie Ingredients")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    Text("2 ¼ cups all-purpose flour (270g)")
-                    VStack {
-                        TextField("input grams", text: $grams)
-                           .multilineTextAlignment(.center)
-                           .font(.title)
-                           .border(Color.gray, width: 1)
-
-                        Button(action: {
-                            if let gramsInt = Int(grams) {
-                                cups = gramsInt * 5
-                                res = "\(grams) grams = \(cups) cups"
-                            } else {
-                                res = "Invalid input"
-                            }
-                        }) {
-                            Text("Convert")
-                        }
-
-                        Text(res)
+                        .padding(.all)
+                    Text("୧ ‧₊˚ 🍪 ⋅ ☆")
+                        .font(.title)
+                
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("2 ¼ cups all-purpose flour (270g)")
+                        Text("¾ teaspoon baking soda")
+                        Text("¾ teaspoon salt")
+                        Text("1 cup unsalted butter softened (227g)")
+                        Text("¾ cup light brown sugar (165g)")
+                        Text("¾ cup granulated sugar (150g)")
+                        Text("1 large egg")
+                        Text("1 tablespoon vanilla extract")
+                        Text("1½ cups chocolate chips or chunks or chopped bars (270g)")
+                        Text("Flaked salt optional")
                     }
+                    .font(.title2)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .padding(.all)
+                    Spacer()
+                        .frame(height: 20.0)
+                    
+                    NavigationLink(destination: Cookie_Recipe(), label: {
+                        ZStack {
+                            Rectangle()
+                                .fill(darkBlue)
+                                .cornerRadius(40)
+                                .frame(width: 330, height: 60)
+                            HStack {
+                                Image(systemName: "arrowshape.right.fill")
+                                    .foregroundColor(.black)
+                                    .padding(.leading, 10)
+                                Text("Go to recipe!")
+                                    .foregroundColor(.black)
+                                    .font(.title)
+                                    .padding(.trailing, 10)
+                            }
+                        }
+                    })
+
+                    /*NavigationLink(destination: Cookie_Recipe(), label: {
+                        Text("Go to recipe!")
+                            .frame(minWidth: 0, maxWidth: 300)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(.blue)
+                            .cornerRadius(40)
+                            .font(.title)
+                    })*/
                 }
-                    Text("¾ teaspoon baking soda")
-                    Text("¾ teaspoon salt")
-                    Text("1 cup unsalted butter softened (227g)")
-                    Text("¾ cup light brown sugar (165g)")
-                    Text("¾ cup granulated sugar (150g)")
-                    Text("1 large egg")
-                    Text("1 tablespoon vanilla extract")
-                    Text("1½ cups chocolate chips or chunks or chopped bars (270g)")
-                    Text("Flaked salt optional")
-                }
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                Spacer()
-                    .frame(height: 20.0)
-                NavigationLink(destination: Cookie_Recipe()) {
-                    Text("Go to the recipe!")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.black)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 180.0, height: 30.0)
-                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                }
+                .padding(.all)
+                .frame(width: 400.0)
             }
         }
     }
-
-
+}
+    
 #Preview {
     Cookie_Ingredients()
 }

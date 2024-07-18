@@ -21,6 +21,7 @@
 		6AE48F1C2C41C8DB00185023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE48F1B2C41C8DB00185023 /* ContentView.swift */; };
 		6AE48F1E2C41C8DD00185023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE48F1D2C41C8DD00185023 /* Assets.xcassets */; };
 		6AE48F212C41C8DD00185023 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE48F202C41C8DD00185023 /* Preview Assets.xcassets */; };
+		7FEF5C282C49CC2C0028A652 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF5C272C49CC2C0028A652 /* Conversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		6AE48F1B2C41C8DB00185023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AE48F1D2C41C8DD00185023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AE48F202C41C8DD00185023 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FEF5C272C49CC2C0028A652 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				6A3B90092C47124500C4A31F /* Pizza Ingredients.swift */,
 				6A3B900B2C47125100C4A31F /* Pizza Recipe.swift */,
 				6A2AF89A2C4835CC00A5E453 /* Backup Code.swift */,
+				7FEF5C272C49CC2C0028A652 /* Conversion.swift */,
 				6AE48F1D2C41C8DD00185023 /* Assets.xcassets */,
 				6AE48F1F2C41C8DD00185023 /* Preview Content */,
 			);
@@ -175,6 +178,7 @@
 				6A3B8FFE2C470A8800C4A31F /* Cookie Ingredients.swift in Sources */,
 				6A3B90022C470AC800C4A31F /* Brownie Ingredients.swift in Sources */,
 				6A3B8FFC2C47096200C4A31F /* Home.swift in Sources */,
+				7FEF5C282C49CC2C0028A652 /* Conversion.swift in Sources */,
 				6AE48F1A2C41C8DB00185023 /* Group_3_Final_ProjectApp.swift in Sources */,
 				6A2AF89B2C4835CD00A5E453 /* Backup Code.swift in Sources */,
 				6A3B90002C470AAD00C4A31F /* Cookie Recipe.swift in Sources */,

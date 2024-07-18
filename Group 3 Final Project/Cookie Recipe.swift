@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Cookie_Recipe: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            ScrollView {
+        ScrollView {
+            VStack(alignment: .leading) {
                 Text("1. In a medium bowl, whisk together flour, baking soda, and salt.")
                 Spacer()
                     .frame(height: 30.0)
