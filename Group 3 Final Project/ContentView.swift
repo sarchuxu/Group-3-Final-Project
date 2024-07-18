@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let darkPink = Color(UIColor(red: 217/255, green: 136/255, blue: 185/255, alpha: 1.0))
     @State var HomeScreen = false
     @State private var puns = [
         "Do you want to experience love at first bite?",
@@ -60,7 +61,7 @@ struct ContentView: View {
                             .bold()
                     }
                     .frame(width: 200, height: 70)
-                    .foregroundColor(.myColor)
+                    .foregroundColor(darkPink)
                 }
                 .navigationDestination(isPresented:$HomeScreen) {
                     Home()

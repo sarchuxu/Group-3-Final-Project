@@ -8,44 +8,51 @@
 import SwiftUI
 
 struct Home: View {
+    let darkPink = Color(UIColor(red: 217/255, green: 136/255, blue: 185/255, alpha: 1.0))
     var body: some View {
         VStack {
             Image("Kooking Woman")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
+                .scaledToFit()
+                .frame(width:300, height: 300)
             Text("Cool recipes yada yada")
-            NavigationLink(destination: Cookie_Ingredients()) {
+            NavigationLink(destination: Cookie_Ingredients(), label: {
                 Text("Bake cookies!")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .frame(width: 170.0, height: 30.0)
-                    .border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-            }
-            NavigationLink(destination: Brownie_Ingredients()) {
+                    .frame(minWidth: 0, maxWidth: 300)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(darkPink)
+                    .cornerRadius(40)
+                    .font(.title)
+            })
+            NavigationLink(destination: Brownie_Ingredients(), label: {
                 Text("Bake brownies!")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .frame(width: 180.0, height: 30.0)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-            }
-            NavigationLink(destination: Pasta_Ingredients()) {
+                    .frame(minWidth: 0, maxWidth: 300)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(darkPink)
+                    .cornerRadius(40)
+                    .font(.title)
+            })
+            NavigationLink(destination: Pasta_Ingredients(), label: {
                 Text("Cook pasta!")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .frame(width: 140.0, height: 30.0)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-            }
-            NavigationLink(destination: Pizza_Ingredients()) {
+                    .frame(minWidth: 0, maxWidth: 300)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(darkPink)
+                    .cornerRadius(40)
+                    .font(.title)
+            })
+            NavigationLink(destination: Pizza_Ingredients(), label: {
                 Text("Make pizza!")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .frame(width: 140.0, height: 30.0)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-            }
+                    .frame(minWidth: 0, maxWidth: 300)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(darkPink)
+                    .cornerRadius(40)
+                    .font(.title)
+            })
         }
     }
 }
