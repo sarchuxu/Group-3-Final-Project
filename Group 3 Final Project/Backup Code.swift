@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+extension Color {
+    public static let myColor: Color = Color(UIColor(red: 217/255, green: 136/255, blue: 185/255, alpha: 1.0)) //Dark pink
+    public static let myColor2: Color = Color(UIColor(red: 255/255, green: 239/255, blue: 239/255, alpha: 1.0)) //Light pink
+}
+
+
 struct Backup_Code: View {
     @State private var showAlert = false
     @State private var grams: String = ""
@@ -59,6 +65,10 @@ struct Backup_Code: View {
 //        PunderfulView()
 //         }
 //        }
+/*extension     Color {
+    public static let myColor: Color = Color(UIColor(red: 100/255, green: 100/255, blue: 100/255, alpha: 1.0))
+ }
+ .foregroundColor(.myColor)*/
     }
 }
 

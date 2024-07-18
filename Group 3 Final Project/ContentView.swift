@@ -28,7 +28,7 @@ struct ContentView: View {
                     .frame(height: 70.0)
                 Button() {
                     HomeScreen = true
-                } 
+                }
                 label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 50)
@@ -38,7 +38,7 @@ struct ContentView: View {
                             .bold()
                     }
                     .frame(width: 200, height: 70)
-                    .foregroundColor(.pink)
+                    .foregroundColor(.myColor)
                 }
                 .navigationDestination(isPresented:$HomeScreen) {
                     Home()
