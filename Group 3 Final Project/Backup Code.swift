@@ -17,9 +17,24 @@ struct Backup_Code: View {
     @State private var showAlert = false
     @State private var grams: String = ""
     @State private var cups: String = ""
+    @State private var textValue: String = ""
+    func deleteNameText() {
+        textValue = ""
+    }
     
     var body: some View {
+        Button("Tap me") {
+         // action
+        }
+        .accessibilityLabel("Tap to perform an action")
+        TextField("", text: $textValue)
+         .accessibilityLabel(Text("Name"))
+         .accessibilityValue(Text("\(textValue)"))
+         .accessibilityAction(named: Text("Reset")) {
+         deleteNameText()
+        }
         VStack {
+            Text("This is backup code.")
             TextField("Enter grams", text: $grams)
                 .keyboardType(.numberPad)
                 .multilineTextAlignment(.center)
@@ -44,7 +59,6 @@ struct Backup_Code: View {
         //                }
         //            var randomPun = pickPun()
         //               Text(randomPun)
-        Text("This is backup code.")
         //        struct PunderfulView: ViewBuilder {
         //         let pun = "I'm a 'view'-tual comedian!"
         //        var body: some View {

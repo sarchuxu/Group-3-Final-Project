@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Cookie_Recipe: View {
+    let lightPink = Color(UIColor(red: 255/255, green: 239/255, blue: 239/255, alpha: 1.0))
     let peach = Color(UIColor(red: 254/255, green: 243/255, blue: 226/255, alpha: 1.0))
     var body: some View {
         ScrollView {

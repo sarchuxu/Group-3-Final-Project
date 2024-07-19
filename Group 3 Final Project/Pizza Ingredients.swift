@@ -63,6 +63,12 @@ struct Pizza_Ingredients: View {
             }
             .padding(.all)
             .frame(width: 400.0)
+            .navigationBarItems(trailing: NavigationLink(destination: Conversion()) {
+                Image(systemName: "pencil.and.list.clipboard")
+                    .imageScale(.large)
+                    .padding()
+            }
+                                )
         }
     }
 }

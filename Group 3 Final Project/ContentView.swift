@@ -22,49 +22,49 @@ struct ContentView: View {
     @State private var currentIndex = 0
     @State private var showPuns = false
     var body: some View {
-        NavigationStack {
-            VStack {
-                Image("Kooking Woman")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                    .scaledToFit()
-                    .frame(width:300, height: 300)
-                Text("Kooking with Klossy")
-                    .font(.system(size:42, weight: .bold, design: .rounded))
-                    .multilineTextAlignment(.center)
-                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                
-                Text(showPuns ? puns[currentIndex] : "FOOD PUNS (click ➚)")
-                    .font(.system(size:18))
-                    .bold()
-                    .padding(10)
-                    .background(Color.myColor2)
-                    .cornerRadius(10)
-                    .onTapGesture {
-                        self.showPuns = true
-                        self.currentIndex = (self.currentIndex + 1) % self.puns.count
+            NavigationStack {
+                VStack {
+                    Image("Kooking Woman")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .scaledToFit()
+                        .frame(width:300, height: 300)
+                    Text("Kooking with Klossy")
+                        .font(.system(size:42, weight: .bold, design: .rounded))
+                        .multilineTextAlignment(.center)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    
+                    Text(showPuns ? puns[currentIndex] : "FOOD PUNS (click ➚)")
+                        .font(.system(size:18))
+                        .bold()
+                        .padding(10)
+                        .background(Color.myColor2)
+                        .cornerRadius(10)
+                        .onTapGesture {
+                            self.showPuns = true
+                            self.currentIndex = (self.currentIndex + 1) % self.puns.count
+                        }
+                    
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.red)
+                    Spacer()
+                        .frame(height: 70.0)
+                    Button() {
+                        HomeScreen = true
                     }
-                
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.red)
-                Spacer()
-                    .frame(height: 70.0)
-                Button() {
-                    HomeScreen = true
-                }
-                label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 50)
-                        Text("Enter!")
-                            .font(.title3)
-                            .foregroundColor(.white)
-                            .bold()
+                    label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 50)
+                            Text("Enter!")
+                                .font(.title3)
+                                .foregroundColor(.white)
+                                .bold()
+                        }
+                        .frame(width: 200, height: 70)
+                        .foregroundColor(darkPink)
                     }
-                    .frame(width: 200, height: 70)
-                    .foregroundColor(darkPink)
-                }
-                .navigationDestination(isPresented:$HomeScreen) {
-                    Home()
+                    .navigationDestination(isPresented:$HomeScreen) {
+                        Home()
                 }
             }
         }
