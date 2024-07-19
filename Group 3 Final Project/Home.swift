@@ -16,7 +16,7 @@ struct Home: View {
                 .aspectRatio(contentMode: .fit)
                 .scaledToFit()
                 .frame(width:300, height: 300)
-            Text("Cool recipes yada yada")
+            Text("Recipes")
             NavigationLink(destination: Cookie_Ingredients(), label: {
                 Text("Bake cookies!")
                     .frame(minWidth: 0, maxWidth: 300)
@@ -54,6 +54,12 @@ struct Home: View {
                     .font(.title)
             })
         }
+        
+        .navigationBarItems(trailing: NavigationLink(destination: Conversion()) {
+                        Image(systemName: "pencil.and.list.clipboard")
+                            .imageScale(.large)
+                            .padding()
+        })
     }
 }
 
