@@ -157,42 +157,6 @@ struct Conversion: View {
                     .padding(.top, 30)
                     .font(.title3)
             }
-            NavigationLink(destination: Cookie_Ingredients(), label: {
-                Text("Bake cookies!")
-                    .frame(minWidth: 0, maxWidth: 300)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(darkPink)
-                    .cornerRadius(40)
-                    .font(.title)
-            })
-            NavigationLink(destination: Brownie_Ingredients(), label: {
-                Text("Bake brownies!")
-                    .frame(minWidth: 0, maxWidth: 300)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(darkPink)
-                    .cornerRadius(40)
-                    .font(.title)
-            })
-            NavigationLink(destination: Pasta_Ingredients(), label: {
-                Text("Cook pasta!")
-                    .frame(minWidth: 0, maxWidth: 300)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(darkPink)
-                    .cornerRadius(40)
-                    .font(.title)
-            })
-            NavigationLink(destination: Pizza_Ingredients(), label: {
-                Text("Make pizza!")
-                    .frame(minWidth: 0, maxWidth: 300)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(darkPink)
-                    .cornerRadius(40)
-                    .font(.title)
-            })
         }
     }
 }
