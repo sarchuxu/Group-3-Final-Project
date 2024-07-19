@@ -26,7 +26,7 @@ struct Brownie_Ingredients: View {
                         Text("1 ¾ cups sugar")
                         Text("2 teaspoons vanilla")
                         Text("3 eggs")
-                        Text("1 cup Gold Medal™ all-purpose flour (is this an ad lol)")
+                        Text("1 cup all-purpose flour")
                         Text("1 cup chopped walnuts")
                     }
                     .font(.title2)

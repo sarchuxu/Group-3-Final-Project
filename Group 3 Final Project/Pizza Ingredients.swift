@@ -15,7 +15,7 @@ struct Pizza_Ingredients: View {
             Color(lightPink).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             ScrollView {
                 VStack(alignment: .center){
-                    Text("Pizza Recipe")
+                    Text("Pizza Ingredients")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
