@@ -26,7 +26,7 @@ struct Conversion: View {
                   .overlay(RoundedRectangle(cornerRadius: 10).stroke(blue, lineWidth: 2))
             Button(action: {
                 if let gramsInt = Float(grams) {
-                    cups = gramsInt * Float(0.0083)
+                    cups = gramsInt * Float(0.005)
                     res = "\(grams) grams = \(cups) cups."
                 } else {
                     res = "Invalid input"
@@ -34,6 +34,8 @@ struct Conversion: View {
             }) {
                 Text("Convert")
                     .font(.title3)
+                    .fontWeight(.heavy)
+                    
             }
             .cornerRadius(8)
             .padding()

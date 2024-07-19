@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct Cookie_Recipe: View {
+    let peach = Color(UIColor(red: 254/255, green: 243/255, blue: 226/255, alpha: 1.0))
     var body: some View {
         ScrollView {
+            VStack {
+                Image("cookieIcon")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxHeight: 150)
+                    .padding(10)
+                    .shadow(color: Color.black.opacity(0.3), radius: 4, x:0, y: 4)
+            }
+            .background(peach)
+            .cornerRadius(15)
+            .padding()
+            Text("Cookie")
+                .font(.title).bold()
+                .padding(.bottom, 15)
+            
             VStack(alignment: .leading) {
+                Text("Instructions: ")
+                    .font(.title3).bold()
+                    .padding(.vertical, 5)
                 Text("1. In a medium bowl, whisk together flour, baking soda, and salt.")
                 Spacer()
                     .frame(height: 30.0)

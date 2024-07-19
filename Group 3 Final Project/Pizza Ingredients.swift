@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct Pizza_Ingredients: View {
-    let lightBlue = Color(UIColor(red: 205/255, green: 245/255, blue: 253/255, alpha: 1.0))
-    let darkBlue = Color(UIColor(red: 137/255, green: 207/255, blue: 243/244, alpha: 1.0))
+    let darkPink = Color(UIColor(red: 225/255, green: 175/255, blue: 209/255, alpha: 1.0))
+    let lightPink = Color(UIColor(red: 255/255, green: 239/255, blue: 239/255, alpha: 1.0))
     var body: some View {
         ZStack {
-            Color(lightBlue).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Color(lightPink).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             ScrollView {
                 VStack(alignment: .center){
                     Text("Pizza Recipe")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    Text("୧ ‧₊˚ 🍕 ⋅ ☆")
+                   
                         .font(.title)
                     VStack (alignment: .leading, spacing: 10){
                         Text("1 cup warm water")
@@ -34,6 +34,10 @@ struct Pizza_Ingredients: View {
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(darkPink, lineWidth: 4)
+                    )
                     .padding(.all)
                 }
                
@@ -42,7 +46,7 @@ struct Pizza_Ingredients: View {
                 NavigationLink(destination: Pizza_Recipe(), label: {
                     ZStack {
                         Rectangle()
-                            .fill(darkBlue)
+                            .fill(darkPink)
                             .cornerRadius(40)
                             .frame(width: 330, height: 60)
                         HStack {

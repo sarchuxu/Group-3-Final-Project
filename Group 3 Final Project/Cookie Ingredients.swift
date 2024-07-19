@@ -8,19 +8,17 @@
 import SwiftUI
 
 struct Cookie_Ingredients: View {
-    let lightBlue = Color(UIColor(red: 205/255, green: 245/255, blue: 253/255, alpha: 1.0))
-    let darkBlue = Color(UIColor(red: 137/255, green: 207/255, blue: 243/244, alpha: 1.0))
+    let darkPink = Color(UIColor(red: 225/255, green: 175/255, blue: 209/255, alpha: 1.0))
+    let lightPink = Color(UIColor(red: 255/255, green: 239/255, blue: 239/255, alpha: 1.0))
     var body: some View {
         ZStack {
-            Color(lightBlue).edgesIgnoringSafeArea(.all)
+            Color(lightPink).edgesIgnoringSafeArea(.all)
             ScrollView {
                 VStack(alignment: .center) {
                     Text("Cookie Ingredients")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(.all)
-                    Text("୧ ‧₊˚ 🍪 ⋅ ☆")
-                        .font(.title)
                 
                     VStack(alignment: .leading, spacing: 10) {
                         Text("2 ¼ cups all-purpose flour (270g)")
@@ -38,6 +36,10 @@ struct Cookie_Ingredients: View {
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(darkPink, lineWidth: 4)
+                    )
                     .padding(.all)
                     Spacer()
                         .frame(height: 20.0)
@@ -45,7 +47,7 @@ struct Cookie_Ingredients: View {
                     NavigationLink(destination: Cookie_Recipe(), label: {
                         ZStack {
                             Rectangle()
-                                .fill(darkBlue)
+                                .fill(darkPink)
                                 .cornerRadius(40)
                                 .frame(width: 330, height: 60)
                             HStack {
@@ -60,15 +62,6 @@ struct Cookie_Ingredients: View {
                         }
                     })
 
-                    /*NavigationLink(destination: Cookie_Recipe(), label: {
-                        Text("Go to recipe!")
-                            .frame(minWidth: 0, maxWidth: 300)
-                            .padding()
-                            .foregroundColor(.white)
-                            .background(.blue)
-                            .cornerRadius(40)
-                            .font(.title)
-                    })*/
                 }
                 .padding(.all)
                 .frame(width: 400.0)
